@@ -2,10 +2,10 @@ class Solution {
 public:
     string reverseWords(string &s){
         stringstream ss(s);
-        string word, ans;
-        while(ss >> word){
-            ans = word + " " + ans;
+        string curr_word, answer;
+        while(ss >> curr_word){
+            answer = curr_word + " " + answer;
         }
-        return ans.substr(0, ans.size()-1);;     
+        return answer.substr(0, size(answer)-1);  
     }
 };
