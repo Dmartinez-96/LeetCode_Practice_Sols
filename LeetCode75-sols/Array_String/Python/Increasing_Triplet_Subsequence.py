@@ -5,10 +5,10 @@ class Solution:
         val2 = float('inf')
         for i in nums:
             # Select lowest value as we scan through nums.
-            if (i < val1):
+            if (i <= val1):
                 val1 = i
             # If still possible and subsequent value is larger, select it as val2.
-            elif (i < val2):
+            elif (i <= val2):
                 val2 = i
             # Catch the third value if present.
             else:
