@@ -8,7 +8,6 @@ class Solution:
             if (i < val1):
                 val1 = i
             # If still possible and subsequent value is larger, select it as val2.
-            # Equal sign included to account for repeated values.
             elif (i < val2):
                 val2 = i
             # Catch the third value if present.
